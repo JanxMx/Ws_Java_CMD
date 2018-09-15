@@ -1,0 +1,133 @@
+Creator:		Jesus Alejandro Valdez Dominguez
+Date:			2018-10-09 
+Description:	Exercises to update and improve some Java details
+Files loaded:
+
+-------------- arrays --------------
+javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\CompareStringArrays.java		// OK	Compile class
+javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\CompareArraysUnsorted.java	// FAIL class CompareStringArrays not found
+javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\*.java						// OK 	Compile both classes
+java -cp build\classes com.jnx.cmd.arrays.unsorted.CompareArraysUnsorted				// OK	Run successfuly
+------------ assertions ------------
+javac -d .\build\classes\ src\com\jnx\cmd\assertions\example_01\*.java
+java -cp build\classes com.jnx.cmd.assertions.example_01.AssertionMain
+------------ comparable ------------
+javac -d .\build\classes\ src\com\jnx\cmd\comparable\example_01\*.java
+java -cp build\classes com.jnx.cmd.comparable.example_01.ComparableMain
+------------ comparator ------------
+javac -d .\build\classes\ src\com\jnx\cmd\comparator\example_01\*.java
+java -cp build\classes com.jnx.cmd.comparator.example_01.ComparatorMain
+----------- constructors -----------
+javac -d .\build\classes\ src\com\jnx\cmd\constructors\load\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\constructors\overload\StudentData.java
+java -cp build\classes com.jnx.cmd.constructors.load.Main
+java -cp build\classes com.jnx.cmd.constructors.overload.StudentData
+------------- datetime -------------
+javac -d .\build\classes\ src\com\jnx\cmd\datetime\example_01\*.java
+java -cp build\classes com.jnx.cmd.datetime.example_01.Main
+--------------- enums --------------
+javac -d .\build\classes\ src\com\jnx\cmd\enums\example_01\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\enums\example_02\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\enums\example_03\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\enums\example_04\*.java
+java -cp build\classes com.jnx.cmd.enums.example_01.EnumExample
+java -cp build\classes com.jnx.cmd.enums.example_01.Test
+java -cp build\classes com.jnx.cmd.enums.example_02.Test
+java -cp build\classes com.jnx.cmd.enums.example_02.Test2
+java -cp build\classes com.jnx.cmd.enums.example_03.Test
+java -cp build\classes com.jnx.cmd.enums.example_03.Test2
+java -cp build\classes com.jnx.cmd.enums.example_04.AppleComputer
+java -cp build\classes com.jnx.cmd.enums.example_04.EnumTextUse
+-------------- equals --------------
+javac -d .\build\classes\ src\com\jnx\cmd\equals\example_01\Equals.java
+java -cp build\classes com.jnx.cmd.equals.example_01.Equals
+------------ exceptions ------------
+javac -d .\build\classes\ src\com\jnx\cmd\exceptions\testfinally\TestFinally.java
+java -cp build\classes com.jnx.cmd.exceptions.testfinally.TestFinally
+------------ interfaces ------------
+javac -d .\build\classes\ src\com\jnx\cmd\interfaces\example_01\*.java
+java -cp build\classes com.jnx.cmd.interfaces.example_01.AnimalMain
+java -cp build\classes com.jnx.cmd.interfaces.example_01.AnimalMainOverride
+java -cp build\classes com.jnx.cmd.interfaces.example_01.AnimalMainLambda
+javac -d .\build\classes\ src\com\jnx\cmd\interfaces\example_02\*.java
+java -cp build\classes com.jnx.cmd.interfaces.example_02.Main
+javac -d .\build\classes\ src\com\jnx\cmd\interfaces\example_03\*.java
+java -cp build\classes com.jnx.cmd.interfaces.example_03.Java8Tester
+javac -d .\build\classes\ src\com\jnx\cmd\interfaces\example_04\*.java
+java -cp build\classes com.jnx.cmd.interfaces.example_04.Main
+------------- jnashhorn ------------
+javac -d .\build\classes\ src\com\jnx\cmd\jsnashorn_java8\example_01\*.java
+java -cp build\classes com.jnx.cmd.jsnashorn_java8.example_01.Java8Tester
+-------------- lambdas -------------
+javac -d .\build\classes\ src\com\jnx\cmd\lambdas\functionalinterface\Java8Tester.java
+javac -d .\build\classes\ src\com\jnx\cmd\lambdas\predicates\PredicateFunctionExample.java
+javac -d .\build\classes\ src\com\jnx\cmd\lambdas\sort\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\lambdas\tutorialspoint\javatester\Java8Tester.java
+javac -d .\build\classes\ src\com\jnx\cmd\lambdas\tutorialspoint\scope\Java8Tester.java
+java -cp build\classes com.jnx.cmd.lambdas.functionalinterface.Java8Tester
+java -cp build\classes com.jnx.cmd.lambdas.predicates.PredicateFunctionExample
+java -cp build\classes com.jnx.cmd.lambdas.sort.SortList
+java -cp build\classes com.jnx.cmd.lambdas.tutorialspoint.javatester.Java8Tester
+java -cp build\classes com.jnx.cmd.lambdas.tutorialspoint.scope.Java8Tester
+--------------- mains --------------
+javac -d .\build\classes\ src\com\jnx\cmd\mains\commented\MainCommented.java
+javac -d .\build\classes\ src\com\jnx\cmd\mains\twomains\*.java
+java -cp build\classes com.jnx.cmd.mains.commented.MainCommented
+java -cp build\classes com.jnx.cmd.mains.twomains.MyClass2
+java -cp build\classes com.jnx.cmd.mains.twomains.MyClass
+--------------- loops --------------
+javac -d .\build\classes\ src\com\jnx\cmd\loops\nested\NestedLoops.java
+javac -d .\build\classes\ src\com\jnx\cmd\loops\nested\NestedLoops2.java
+java -cp build\classes com.jnx.cmd.loops.nested.NestedLoops
+---------- pass of values ----------
+javac -d .\build\classes\ src\com\jnx\cmd\passvalues\example_01\PassValue.java
+java -cp build\classes com.jnx.cmd.passvalues.example_01.PassValue
+------------ references ------------
+javac -d .\build\classes\ src\com\jnx\cmd\references\systemout\Java8Tester.java
+java -cp build\classes com.jnx.cmd.references.systemout.Java8Tester
+-------------- sorting -------------
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\*.java
+java -cp build\classes com.jnx.cmd.sorting.BubbleSort
+java -cp build\classes com.jnx.cmd.sorting.CountingSort
+java -cp build\classes com.jnx.cmd.sorting.HeapSort
+java -cp build\classes com.jnx.cmd.sorting.InsertionSort
+java -cp build\classes com.jnx.cmd.sorting.MergeSort
+java -cp build\classes com.jnx.cmd.sorting.QuickSort
+java -cp build\classes com.jnx.cmd.sorting.QuickSort2			// FALLANDO
+java -cp build\classes com.jnx.cmd.sorting.SelectionSort
+-------------- streams -------------
+javac -d .\build\classes\ src\com\jnx\cmd\streams\buildstreams\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\streams\converting\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\streams\exercises\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\streams\parallelism\StreamBuilders.java
+javac -d .\build\classes\ src\com\jnx\cmd\streams\prints\*.java
+javac -d .\build\classes\ src\com\jnx\cmd\streams\random\Main.java
+java -cp build\classes com.jnx.cmd.streams.buildstreams.StreamBuildersArray
+java -cp build\classes com.jnx.cmd.streams.buildstreams.StreamBuildersCharOrString
+java -cp build\classes com.jnx.cmd.streams.buildstreams.StreamBuildersIterate
+java -cp build\classes com.jnx.cmd.streams.buildstreams.StreamBuildersList
+java -cp build\classes com.jnx.cmd.streams.buildstreams.StreamBuildersValues
+java -cp build\classes com.jnx.cmd.streams.converting.StreamBuildersToArray
+java -cp build\classes com.jnx.cmd.streams.converting.StreamBuildersToList
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamCollectToList
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamCountElements
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamFindFirst
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamMatch
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamMethodsWithList
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamMethodsWithMap
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamReduce
+java -cp build\classes com.jnx.cmd.streams.exercises.StreamSortedMap
+java -cp build\classes com.jnx.cmd.streams.parallelism.StreamBuilders
+java -cp build\classes com.jnx.cmd.streams.prints.PrintCountEmptyStrings
+java -cp build\classes com.jnx.cmd.streams.prints.PrintRandomNumbers
+java -cp build\classes com.jnx.cmd.streams.prints.PrintSortedNumbers
+java -cp build\classes com.jnx.cmd.streams.prints.PrintUniqueSquares
+java -cp build\classes com.jnx.cmd.streams.random.Main
+------------ switchcases -----------
+javac -d .\build\classes\ src\com\jnx\cmd\switchcases\example_01\*.java
+java -cp build\classes com.jnx.cmd.switchcases.example_01.Main
+------------ system exit ----------
+javac -d .\build\classes\ src\com\jnx\cmd\systemexit\SystemExit.java
+java -cp build\classes com.jnx.cmd.systemexit.SystemExit
+
+
