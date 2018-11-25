@@ -3,11 +3,6 @@ Date:			2018-09-10
 Description:	Exercises to update and improve some Java details
 Files loaded:
 
--------------- arrays --------------
-javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\CompareStringArrays.java		// OK	Compile class
-javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\CompareArraysUnsorted.java	// FAIL class CompareStringArrays not found
-javac -d .\build\classes\ src\com\jnx\cmd\arrays\unsorted\*.java						// OK 	Compile both classes
-java -cp build\classes com.jnx.cmd.arrays.unsorted.CompareArraysUnsorted				// OK	Run successfuly
 ------------ assertions ------------
 javac -d .\build\classes\ src\com\jnx\cmd\assertions\example_01\*.java
 java -cp build\classes com.jnx.cmd.assertions.example_01.AssertionMain
@@ -22,6 +17,126 @@ javac -d .\build\classes\ src\com\jnx\cmd\constructors\load\*.java
 javac -d .\build\classes\ src\com\jnx\cmd\constructors\overload\StudentData.java
 java -cp build\classes com.jnx.cmd.constructors.load.Main
 java -cp build\classes com.jnx.cmd.constructors.overload.StudentData
+---------- data structures - arrays ---------
+javac -d .\build\classes src\com\jnx\cmd\datastructures\arrays\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.arrays.creation.CreateArrays
+javac -d .\build\classes src\com\jnx\cmd\datastructures\arrays\unsorted\CompareStringArrays.java		// OK	Compile class
+javac -d .\build\classes src\com\jnx\cmd\datastructures\arrays\unsorted\CompareArraysUnsorted.java	// FAIL class CompareStringArrays not found
+javac -d .\build\classes src\com\jnx\cmd\datastructures\arrays\unsorted\*.java						// OK 	Compile both classes
+java -cp build\classes com.jnx.cmd.datastructures.arrays.unsorted.CompareArraysUnsorted				// OK	Run successfuly
+---------- data structures - collections ---------
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\lists\arraylists\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.lists.arraylists.creation.CreateArrayLists
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\lists\arraylists\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.lists.arraylists.iterator_example.ArrayListExample
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\lists\arraylists\traverse_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.lists.arraylists.traverse_example.TraverseExample
+
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\lists\linkedlists\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.lists.linkedlists.creation.CreateLinkedList
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\lists\linkedlists\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.lists.linkedlists.iterator_example.LinkedListExample
+
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\hashmaps\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.hashmaps.creation.CreateHashMap
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\hashmaps\entrykeys\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.hashmaps.entrykeys.HashMapDemo
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\hashmaps\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.hashmaps.example_01.HashMapExample
+
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\hashtables\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.hashtables.example_01.HashTableExample
+
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\linkedhashmaps\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.linkedhashmaps.creation.CreateLHM
+
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\treemaps\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.treemaps.example_01.TreeMapDemo
+javac -d .\build\classes\ src\com\jnx\cmd\datastructures\collections\maps\treemaps\navigablemaps\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.maps.treemaps.navigablemaps.NavigableMapDemo
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\queues\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.queues.creation.CreateQueue
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\queues\deques\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.queues.deques.example_01.DequeDemo
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\queues\linkedlists\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.queues.linkedlists.QueueClass
+java -cp build\classes com.jnx.cmd.datastructures.collections.queues.linkedlists.QueueExample
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\queues\priorityqueues\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.queues.priorityqueues.iterator_example.PriorityQueueExample
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\hashsets\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.hashsets.creation.CreateHashSet
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\hashsets\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.hashsets.iterator_example.HashSetExample
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\linkedhashsets\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.linkedhashsets.creation.CreateLHS
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\linkedhashsets\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.linkedhashsets.iterator_example.LinkedHashSetExample
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\treesets\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.treesets.example_01.TreeSetDemo
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\sets\treesets\iterator_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.sets.treesets.iterator_example.TreeSetExample
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\stacks\creation\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.stacks.creation.CreateStack
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\stacks\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.stacks.example_01.Main
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\stacks\example_02\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.stacks.example_02.TestStack
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\collections\vectors\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoAdd
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoAdd2
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoAddAll
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoAddAll
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoClear
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoClone
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoContains
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoCopyInto
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoEnsureCapacity
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoEquals
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoFirstElement
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoGetIndex
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoHashCode
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoIndexOf
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoInsertElementAt
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoIsEmpty
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoLastElement
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoLastIndexOf
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoObjectToArray
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoRemoveAllElements
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoRemoveElement
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoRetainAll
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoSetElement
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoSize
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoStringToString
+java -cp build\classes com.jnx.cmd.datastructures.collections.vectors.example_01.VectorDemoTrimToSize
+
+---------- data structures - dictionaries, graphs and stacks ---------
+javac -d .\build\classes src\com\jnx\cmd\datastructures\dictionaries\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.dictionaries.example_01.DictionaryExample
+javac -d .\build\classes src\com\jnx\cmd\datastructures\dictionaries\example_02\*.java
+java -cp build\classes com.jnx.cmd.datastructures.dictionaries.example_02.DictionaryDemo
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\graphs\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.graphs.example_01.GFG
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\trees\binarytrees\creation_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.trees.binarytrees.creation_01.BinaryTree
+javac -d .\build\classes src\com\jnx\cmd\datastructures\trees\binarytrees\creation_02\*.java
+java -cp build\classes com.jnx.cmd.datastructures.trees.binarytrees.creation_02.BinaryTree
+javac -d .\build\classes src\com\jnx\cmd\datastructures\trees\binarytrees\creation_03\*.java
+java -cp build\classes com.jnx.cmd.datastructures.trees.binarytrees.creation_03.BinaryTree
+javac -d .\build\classes src\com\jnx\cmd\datastructures\trees\binarytrees\traverse_example\*.java
+java -cp build\classes com.jnx.cmd.datastructures.trees.binarytrees.traverse_example.BinaryTree
+
+javac -d .\build\classes src\com\jnx\cmd\datastructures\tries\example_01\*.java
+java -cp build\classes com.jnx.cmd.datastructures.tries.example_01.TrieDemo
+java -cp build\classes com.jnx.cmd.datastructures.tries.example_01.TrieReloaded
+
+
 ------------- datetime -------------
 javac -d .\build\classes\ src\com\jnx\cmd\datetime\example_01\*.java
 java -cp build\classes com.jnx.cmd.datetime.example_01.Main
@@ -41,9 +156,25 @@ java -cp build\classes com.jnx.cmd.enums.example_04.EnumTextUse
 -------------- equals --------------
 javac -d .\build\classes\ src\com\jnx\cmd\equals\example_01\Equals.java
 java -cp build\classes com.jnx.cmd.equals.example_01.Equals
+
 ------------ exceptions ------------
 javac -d .\build\classes\ src\com\jnx\cmd\exceptions\testfinally\TestFinally.java
 java -cp build\classes com.jnx.cmd.exceptions.testfinally.TestFinally
+--------------- files --------------
+javac -d .\build\classes\ src\com\jnx\cmd\files\nio\streams\example_01\*.java
+java -cp build\classes com.jnx.cmd.files.nio.streams.example_01.TestReadFile1
+java -cp build\classes com.jnx.cmd.files.nio.streams.example_01.TestReadFile2
+java -cp build\classes com.jnx.cmd.files.nio.streams.example_01.TestReadFile3
+java -cp build\classes com.jnx.cmd.files.nio.streams.example_01.TestReadFile4
+java -cp build\classes com.jnx.cmd.files.nio.streams.example_01.TestReadFile5
+-------------- hashing -------------
+javac -d .\build\classes src\com\jnx\cmd\hashing\example_01\*.java
+java -cp build\classes com.jnx.cmd.hashing.example_01.PasswordSha256
+javac -d .\build\classes src\com\jnx\cmd\hashing\example_02\*.java
+java -cp build\classes com.jnx.cmd.hashing.example_02.Main
+javac -d .\build\classes src\com\jnx\cmd\hashing\example_03\*.java
+java -cp build\classes com.jnx.cmd.hashing.example_03.Demo1
+java -cp build\classes com.jnx.cmd.hashing.example_03.Demo2
 ------------ interfaces ------------
 javac -d .\build\classes\ src\com\jnx\cmd\interfaces\example_01\*.java
 java -cp build\classes com.jnx.cmd.interfaces.example_01.AnimalMain
@@ -87,14 +218,64 @@ javac -d .\build\classes\ src\com\jnx\cmd\references\systemout\Java8Tester.java
 java -cp build\classes com.jnx.cmd.references.systemout.Java8Tester
 -------------- sorting -------------
 javac -d .\build\classes\ src\com\jnx\cmd\sorting\*.java
-java -cp build\classes com.jnx.cmd.sorting.BubbleSort
-java -cp build\classes com.jnx.cmd.sorting.CountingSort
-java -cp build\classes com.jnx.cmd.sorting.HeapSort
-java -cp build\classes com.jnx.cmd.sorting.InsertionSort
-java -cp build\classes com.jnx.cmd.sorting.MergeSort
-java -cp build\classes com.jnx.cmd.sorting.QuickSort
-java -cp build\classes com.jnx.cmd.sorting.QuickSort2			// FALLANDO
-java -cp build\classes com.jnx.cmd.sorting.SelectionSort
+java -cp build\classes com.jnx.cmd.sorting.TrickySlashTwo
+
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\bfs\graph\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.bfs.graph.example_01.GraphBST
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\bubblesort\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.bubblesort.creation_01.BubbleSortDemo
+
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\bubblesort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.bubblesort.example_01.BubbleSort
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\countingsort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.countingsort.example_01.CountingSort
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\heapsort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.heapsort.example_01.HeapSort
+java -cp build\classes com.jnx.cmd.sorting.heapsort.example_01.HeapSortII
+
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\insertionsort\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.insertionsort.creation_01.InsertionSortDemo
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\insertionsort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.insertionsort.example_01.InsertionSort
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\mergesort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.mergesort.example_01.MergeSort
+
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\quicksort\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.quicksort.creation_01.QuickSortDemo
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\quicksort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.quicksort.example_01.QuickSort
+java -cp build\classes com.jnx.cmd.sorting.quicksort.example_01.QuickSortII
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\radix\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.radix.example_01.RadixDemo
+
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\selectionsort\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.selectionsort.creation_01.SelectionSortDemo
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\selectionsort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.selectionsort.example_01.SelectionSort
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\shellsort\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.shellsort.creation_01.ShellSortDemo
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\shellsort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.shellsort.example_01.ShellSortDemo
+java -cp build\classes com.jnx.cmd.sorting.shellsort.example_01.ShellSortDemo2
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\treesort\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.treesort.example_01.GFG
+
+------------ comparable ------------
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparable\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparable.creation_01.Creation_01
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparable\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparable.example_01.ComparableMain
+------------ comparator ------------
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparator\creation_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparator.creation_01.Creation_01
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparator\creation_02\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparator.creation_02.Creation_01
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparator\example_01\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparator.example_01.ComparatorMain
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparator\example_02\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparator.example_02.Comparators
+javac -d .\build\classes\ src\com\jnx\cmd\sorting\comparator\example_03\*.java
+java -cp build\classes com.jnx.cmd.sorting.comparator.example_03.Main
 -------------- streams -------------
 javac -d .\build\classes\ src\com\jnx\cmd\streams\buildstreams\*.java
 javac -d .\build\classes\ src\com\jnx\cmd\streams\converting\*.java
@@ -123,6 +304,15 @@ java -cp build\classes com.jnx.cmd.streams.prints.PrintRandomNumbers
 java -cp build\classes com.jnx.cmd.streams.prints.PrintSortedNumbers
 java -cp build\classes com.jnx.cmd.streams.prints.PrintUniqueSquares
 java -cp build\classes com.jnx.cmd.streams.random.Main
+--------------- swing --------------
+javac -d .\build\classes\ src\com\jnx\cmd\swing\example_01\*.java
+java -cp build\classes com.jnx.cmd.swing.example_01.BasicGUI
+java -cp build\classes com.jnx.cmd.swing.example_01.ComplexGUI
+javac -d .\build\classes\ src\com\jnx\cmd\swing\example_02\*.java
+java -cp build\classes com.jnx.cmd.swing.example_02.QuitButton
+java -cp build\classes com.jnx.cmd.swing.example_02.Tooltip
+javac -d .\build\classes\ src\com\jnx\cmd\swing\example_03\*.java
+java -cp build\classes com.jnx.cmd.swing.example_03.JRadioButtonDemo
 ------------ switchcases -----------
 javac -d .\build\classes\ src\com\jnx\cmd\switchcases\example_01\*.java
 java -cp build\classes com.jnx.cmd.switchcases.example_01.Main
